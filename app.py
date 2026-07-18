@@ -94,6 +94,6 @@ async def predict(request: Request):
 
 
 if __name__ == "__main__":
-    host = os.getenv("APP_HOST", "127.0.0.1")
-    port = int(os.getenv("APP_PORT", 8000))
+    host = os.getenv("APP_HOST", "0.0.0.0")
+    port = int(os.getenv("APP_PORT", 5000))
     run(app, host=host, port=port)
